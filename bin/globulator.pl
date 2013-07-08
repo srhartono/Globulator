@@ -147,7 +147,7 @@ foreach my $c(@cres) {
 	}
 }
 
-print $ambiout "\n>AMBIGUOUS CRESCENT<\nCres_x\ty_coor\yCres_area\n";
+print $ambiout "\n>AMBIGUOUS CRESCENT<\nCres_x\tCres_y\tCres_area\n";
 foreach my $cresent(@amb_cres) {
 	foreach my $hash(@$cresent) {
 		my ($xc, $yc, $area_c) = (${$hash}{x}, ${$hash}{y}, ${$hash}{area});
