@@ -9,23 +9,24 @@ IMPORTANT!
 - imageJ program need Graphical User Interface, therefore it can't be run remotely
 - imageJ run through Macros that goes through tabs, therefore it's advised to not use the computer while it is running
 
-RUNNING:
-simply run globulator.pl from your terminal (mac/linux) or cmd (windows)
+RUNNING
+simply run start.pl from your terminal (mac/linux) or cmd (windows)
 don't forget to chmod 740 globulator.pl if you're at mac/linux
 Windows: perl -f <drag and drop globulator.pl here>
 Mac/Linux: <drag and drop globulator.pl here>
-
-to update: 
-1) download imageJ from http://rsbweb.nih.gov/ij/download.html, choose according to your OS
-2) download lates ij.jar from http://imagej.nih.gov/ij/upgrade/ij.jar
-3) Put the new imageJ FOLDER into GLOBULATOR folder, overwriting old files
-4) Put ij.jar into GLOBULATOR folder, overwriting old file
 
 EXAMPLE FILES
 Example DIC and RG files can be retrieved from dropbox:
 https://www.dropbox.com/sh/mwgupokswkiqi6d/_cwGVzl7Xg/
 Put DIC_example.tiff into PUT_SLIDES_HERE/DIC/
 Put RG_example.tiff into PUT_SLIDES_HERE/RG/
+See README2.html for test example
+
+UPDATING IMAGEJ 
+1) download imageJ from http://rsbweb.nih.gov/ij/download.html, choose according to your OS
+2) download lates ij.jar from http://imagej.nih.gov/ij/upgrade/ij.jar
+3) Put the new imageJ FOLDER into GLOBULATOR folder, overwriting old files
+4) Put ij.jar into GLOBULATOR folder, overwriting old file
 
 SCRIPTS
 0) start.pl
