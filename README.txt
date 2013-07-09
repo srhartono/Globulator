@@ -1,3 +1,11 @@
+# Globulator 1.1
+# by Stella Hartono
+# srhartono@ucdavis.edu
+# Graduate student in Genetics at UC Davis
+# Feel free to email me with any comments/questions!
+#
+#####################################################
+
 RUNNING
 put slide file accordingly in respective folders inside PUT_SLIDES_HERE folder (DIC_ into "DIC" folder, RG_ into "RG" folder)
 run perl script start.pl from your terminal (mac/linux) or cmd (windows)
@@ -61,3 +69,4 @@ There are two versions of these: UNIX (mac/linux) and WIN (windows)
 GLOB_.ijm analyzes globules
 CRES_.ijm analyzes crescent
 CONT_.ijm analyzes contamination
+
