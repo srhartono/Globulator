@@ -1,0 +1,35 @@
+<h3>1. Clone Globulator using git.</h3>
+
+<p><code>git clone https://github.com/srhartono/Globulator</code></p>
+<em>If you do not have git, go to http://git-scm.com/book/en/Getting-Started-Installing-Git for instructions how to set up git</em></p>
+
+<h3>2. Download example files</h3>
+<br/>Download DIC_example.tif and RG_example.tif from https://www.dropbox.com/sh/mwgupokswkiqi6d/_cwGVzl7Xg/
+<br/>Gunzip each file (e.g. <code>gunzip DIC_example.gz</code>)
+<br/>Put DIC_example.tif in PUT_SLIDES_HERE/DIC/
+<br/>Put RG_example.tif in PUT_SLIDES_HERE/RG
+
+<h3>3. Run start.pl in main folder</h3>
+
+<p><code>perl start.pl</code></p>
+
+<h3>4. Results</h3>
+
+<p>1. ImageJ will start running and process DIC<em>example.tif and RG</em>example.tif files. It's recommended to let the program run and not use the computer in the meantime. ImageJ will turn each image into black and white mask and each will produce coordinate list.</p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/86e6ad526e935793999cd71421d870d1/1.png" alt="Processing Globulles" title="" /></p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/c8eca1c4fc0d28d4cef6a8ac1cbe2cd1/2.png" alt="Processing Globulles" title="" /></p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/0f0333ab61370b02d528e64bf1a3206b/3.png" alt="Processing RG" title="" /></p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/1e021b7fd01a829d488463a28cd8417c/4.png" alt="Processing RG" title="" /></p>
+
+<p>2. After imageJ is done, it will close and globulator.pl, summarizer.pl, and draw.pl will start to run. The result folder name will be shown.</p>
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/a64ba5f00131bb8285a7721dbc466899/5.png" alt="Run messages" title="" /></p>
+
+<p>3. Finally, you can also view the resulting map based on imageJ resulting coordinates. If you do not have R and draw.pl failed to run, it is okay because the resulting globule/crescent coordinates is still in the result folder, but you won't be able to see the map.</p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/5a425e8a43b0edcac47435e1f24b1ed1/6.png" alt="Map" title="" /></p>
+
+<p><img src="https://trello-attachments.s3.amazonaws.com/4f4a0f6b4a6b995f43b32130/4f4a0f71345c87580c1a0d88/4d5453a2fe5bbf8ecfc62dc94d17860f/7.png" alt="Map" title="" /></p>
