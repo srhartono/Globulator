@@ -20,7 +20,7 @@ Example DIC and RG files can be retrieved from dropbox:
 https://www.dropbox.com/sh/mwgupokswkiqi6d/_cwGVzl7Xg/
 Put DIC_example.tiff into PUT_SLIDES_HERE/DIC/
 Put RG_example.tiff into PUT_SLIDES_HERE/RG/
-See README2.html for test example
+See README2.html for test example (https://github.com/srhartono/Globulator/blob/master/README2.html)
 
 UPDATING IMAGEJ 
 1) download imageJ from http://rsbweb.nih.gov/ij/download.html, choose according to your OS
