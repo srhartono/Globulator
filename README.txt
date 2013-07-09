@@ -1,27 +1,23 @@
-IMPORTANT!
-- make sure each image file have these names: DIC_ and RG_
-- make sure each globules in DIC_ image slide have white part on the bottom (see readme2.png for more info)
-- make sure that your PUT_SLIDES_HERE folder only contain slides that you want to analyze
-- put slide file accordingly in respective folders inside PUT_SLIDES_HERE folder (DIC_ into "DIC" folder, RG_ into "RG" folder, while ALL_, R_, and G_ are in "OTHER" folder
-- install latest Java (required)
-- install latest Perl (required)
-- install latest R (recommended) and plotrix library
-- imageJ program need Graphical User Interface, therefore it can't be run remotely
-- imageJ run through Macros that goes through tabs, therefore it's advised to not use the computer while it is running
-
 RUNNING
-simply run start.pl from your terminal (mac/linux) or cmd (windows)
-don't forget to chmod 740 globulator.pl if you're at mac/linux
-Windows: perl -f <drag and drop globulator.pl here>
-Mac/Linux: <drag and drop globulator.pl here>
+put slide file accordingly in respective folders inside PUT_SLIDES_HERE folder (DIC_ into "DIC" folder, RG_ into "RG" folder)
+run perl script start.pl from your terminal (mac/linux) or cmd (windows)
 
 EXAMPLE FILES
 Example DIC and RG files can be retrieved from dropbox:
 https://www.dropbox.com/sh/mwgupokswkiqi6d/_cwGVzl7Xg/
 Put DIC_example.tiff into PUT_SLIDES_HERE/DIC/
 Put RG_example.tiff into PUT_SLIDES_HERE/RG/
-See README2.html for test example - save it as .html and run using internet browser
+See README2.html for step-by-step test run - save it as .html and run using internet browser
 (https://github.com/srhartono/Globulator/blob/master/README2.html)
+
+IMPORTANT
+- make sure each image file have these names: DIC_ and RG_
+- make sure each globules in DIC_ image slide have white part on the bottom (see README3.png for more info)
+- make sure that your PUT_SLIDES_HERE folder only contain slides that you want to analyze
+- Required: install latest Java and latest Perl
+- Recommended: install latest R (recommended) and plotrix library
+- imageJ program need Graphical User Interface, therefore it can't be run remotely
+- imageJ run through Macros that go through tabs, therefore it's advised to not use the computer while it is running
 
 UPDATING IMAGEJ 
 1) download imageJ from http://rsbweb.nih.gov/ij/download.html, choose according to your OS
@@ -56,7 +52,10 @@ This program uses R script to draw result of globules/crescent captured by image
 This is useful to validate result by comparing the original with the result images.
 Sample Usage: perl draw.pl globulator/result/2011_9_29_21_28
 
-4) .ijm files
+4) draw_*.R
+These are R scripts used by draw.pl to create maps of imageJ results
+
+5) .ijm files
 These are macro for imageJ (automatically installed into imageJ)
 There are two versions of these: UNIX (mac/linux) and WIN (windows)
 GLOB_.ijm analyzes globules
