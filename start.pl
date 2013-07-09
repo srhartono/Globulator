@@ -127,6 +127,10 @@ chmod 0777, $summary_path unless ($OS =~ m/MSWin/i);
 system ("perl -f $summary_path") if ($OS =~ m/MSwin/i);
 system ("$summary_path") if ($OS !~ m/MSWin/i);
 
+# Create graph
+my $draw_cmd = "perl bin/draw.pl $dir_res_current";
+system($draw_cmd) == 0 or print "start.pl: Error at running bin/draw.pl: $!\n";
+
 sub checkfile {
 	my ($filename) = @_;
 	if (not -e $filename and not -s $filename) {
